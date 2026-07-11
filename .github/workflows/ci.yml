@@ -32,6 +32,8 @@ jobs:
       DB_URL: jdbc:postgresql://localhost:5432/todo_auth
       DB_USERNAME: postgres
       DB_PASSWORD: postgres
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      EXPIRATION_MS: ${{ secrets.EXPIRATION_MS }}
 
     steps:
       - name: Checkout repository

@@ -29,8 +29,8 @@ public class SecurityConfig {
 
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
-                                "/app/todo/register",
-                                "/app/todo/login"
+                                "/app/todo/auth/register",
+                                "/app/todo/auth/login"
                         ).permitAll()
 
                         .anyRequest().authenticated()

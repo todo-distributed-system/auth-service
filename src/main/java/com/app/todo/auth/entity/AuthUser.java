@@ -1,5 +1,6 @@
 package com.app.todo.auth.entity;
 
+import com.app.todo.auth.constants.UserStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -29,8 +30,9 @@ public class AuthUser {
     private String passwordHash;
 
     @Column(name = "status", nullable = false, length = 30)
+    @Enumerated(EnumType.STRING)
     @Builder.Default
-    private String status = "ACTIVE";
+    private UserStatus status = UserStatus.ACTIVE;
 
     @Column(name = "email_verified", nullable = false)
     @Builder.Default

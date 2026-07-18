@@ -37,11 +37,9 @@ public class UserRegistrationService {
 
         userServiceClient.createUser(createUserRequest);
 
-        UserRegistrationResponse userRegistrationResponse = UserRegistrationResponse.builder()
+        return UserRegistrationResponse.builder()
                 .registrationStatus("User Registered")
                 .build();
-
-        return userRegistrationResponse;
     }
 
 }

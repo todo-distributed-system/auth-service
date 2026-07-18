@@ -13,11 +13,11 @@ public class UserServiceClient {
 
     public void createUser(CreateUserRequest createUserRequest) {
 
-        userServiceClient.post()
-                .uri("http://localhost:8081/app/todo/user/create")
-                .body(createUserRequest)
-                .retrieve()
-                .toBodilessEntity();
+//        userServiceClient.post()
+//                .uri("http://localhost:8081/app/todo/user/create")
+//                .body(createUserRequest)
+//                .retrieve()
+//                .toBodilessEntity();
 
     }
 

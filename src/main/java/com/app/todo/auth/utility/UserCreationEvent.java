@@ -1,4 +1,4 @@
-package com.app.todo.auth.request;
+package com.app.todo.auth.utility;
 
 import lombok.Builder;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @Builder
 @Data
-public class CreateUserRequest {
+public class UserCreationEvent {
     private UUID userId;
     private String email;
     private LocalDateTime createdAt;
